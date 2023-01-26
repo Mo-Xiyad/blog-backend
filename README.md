@@ -20,6 +20,7 @@
 > JWT_REFRESH_SECRET = Run the same command as above
 > CLOUDINARY_URL= 'your cloudinary url'
 > SENDGRID_API_KEY = 'your sendgrid api key'
+> API_URL = 'http://localhost:5000' this is for the Google OAuth
 
 ## After your done with the above steps you can run the following commands in your terminal
 

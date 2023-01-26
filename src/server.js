@@ -35,8 +35,7 @@ const loggerMiddleWare = (req, res, next) => {
 };
 // ******************** CORS SETUP FOR CLOUD HOSTING **********************
 
-// const whitelist = [process.env.FE_LOCAL_URL, process.env.FE_PROD_URL];
-const whitelist = ["http://localhost:3000", "http://localhost:3002"];
+const whitelist = [process.env.FE_LOCAL_URL, process.env.FE_PROD_URL];
 
 const corsOptions = {
   origin: function (origin, next) {
