@@ -35,7 +35,11 @@ const loggerMiddleWare = (req, res, next) => {
 };
 // ******************** CORS SETUP FOR CLOUD HOSTING **********************
 
-const whitelist = [process.env.FE_LOCAL_URL, process.env.FE_PROD_URL];
+const whitelist = [
+  process.env.FE_LOCAL_URL,
+  process.env.FE_PROD_URL,
+  "https://blog-frontend-mf4z.vercel.app" // this is bad
+];
 
 const corsOptions = {
   origin: function (origin, next) {
