@@ -295,7 +295,7 @@ usersRouterDB.post("/verifyToken", async (req, res, next) => {
   }
 });
 
-usersRouterDB.post("/test", async (req, res, next) => {
+usersRouterDB.get("/test", async (req, res, next) => {
   try {
     res.status(204).send("its working");
   } catch (err) {
